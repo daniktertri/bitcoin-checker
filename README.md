@@ -36,7 +36,14 @@ This tool is for **EDUCATIONAL PURPOSES ONLY**. Finding a private key that corre
    go mod tidy
    ```
 
-3. **Configure Telegram bot:**
+3. **Download funded addresses list:**
+   - Visit [http://addresses.loyce.club](http://addresses.loyce.club)
+   - Download the **LATEST** file (approximately 1600 MB)
+   - The file contains all funded Bitcoin addresses sorted by balance
+   - Rename the downloaded file to `Bitcoin_addresses_LATEST.txt`
+   - Place it in your project directory
+
+4. **Configure Telegram bot:**
    - Create a Telegram bot via [@BotFather](https://t.me/botfather)
    - Get your bot token
    - Get your chat ID
@@ -46,7 +53,7 @@ This tool is for **EDUCATIONAL PURPOSES ONLY**. Finding a private key that corre
      const chatID = "YOUR_CHAT_ID_HERE"
      ```
 
-4. **Prepare your funded addresses list:**
+5. **Verify your setup:**
    - Ensure `Bitcoin_addresses_LATEST.txt` exists in the project directory
    - Each line should contain one Bitcoin address
    - Addresses should be in standard Bitcoin format (starting with 1, 3, or bc1)
